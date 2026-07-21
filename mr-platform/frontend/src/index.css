@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+  ::selection {
+    @apply bg-clinical-teal/20;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-widest2 text-ink-400;
+  }
+  .card {
+    @apply bg-white border border-ink-100 rounded-sm;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-ink text-white font-body font-medium text-sm px-4 py-2.5 rounded-sm hover:bg-ink-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-white text-ink border border-ink-100 font-body font-medium text-sm px-4 py-2.5 rounded-sm hover:border-ink-400 transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 bg-clinical-teal text-white font-body font-medium text-sm px-4 py-2.5 rounded-sm hover:bg-clinical-tealDark transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .field-input {
+    @apply w-full border border-ink-100 rounded-sm px-3 py-2 text-sm font-body bg-white focus:outline-none focus:ring-2 focus:ring-clinical-teal/30 focus:border-clinical-teal;
+  }
+  .field-label {
+    @apply block eyebrow mb-1.5;
+  }
+  .label-chip {
+    @apply font-mono text-[11px] uppercase tracking-wide border border-dashed border-ink-100 px-2 py-0.5 rounded-sm text-ink-400;
+  }
+}

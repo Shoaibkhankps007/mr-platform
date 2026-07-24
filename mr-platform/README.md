@@ -51,7 +51,7 @@ Frontend: `http://localhost:5173` · Backend: `http://localhost:8080`. Same seed
 ### Option B — Run backend and frontend directly
 
 ### Backend
-Requires Java 17+ and Maven. **This code has not been compiled in the environment I built it in** (no Maven Central access there), so please treat first-run as a real test — check back here if `mvn spring-boot:run` reports errors and I'll fix them.
+Requires Java 17+ and Maven. **This code has not been compiled in the environment I built it in** (no Maven Central access there), so please treat first-run as a real test — check back here if `mvn spring-boot:run` reports errors.
 
 ```bash
 cd backend
